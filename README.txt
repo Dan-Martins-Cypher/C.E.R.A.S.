@@ -4,7 +4,7 @@ C.E.R.A.S. é uma linguagem de programação experimental desenvolvida em C, com
 
 O projeto tem como objetivo explorar a criação de uma linguagem própria desde seus fundamentos, incluindo sintaxe, análise léxica, estruturas de dados, interpretação e, futuramente, compilação.
 
-Computatio, Est, Recursio, Abstractio, Syntaxis.
+~Computatio Est Recursio Abstractio Syntaxis.
 
 Objetivos
 
