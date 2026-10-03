@@ -1,131 +1,99 @@
-# C.E.R.A.S.
+C.E.R.A.S.
 
-**C.E.R.A.S.** é uma linguagem de programação experimental desenvolvida em **C**, com inspiração em **programação funcional** e **abstração** e uma sintaxe baseada em **latim**.
+C.E.R.A.S. é uma linguagem de programação experimental desenvolvida em C, com inspiração em programação funcional, abstração e uma sintaxe baseada em latim.
 
 O projeto tem como objetivo explorar a criação de uma linguagem própria desde seus fundamentos, incluindo sintaxe, análise léxica, estruturas de dados, interpretação e, futuramente, compilação.
 
-> *Computatio, Est, Recursio, Abstractio, Syntaxis.*
+Computatio, Est, Recursio, Abstractio, Syntaxis.
 
-## Objetivos
+Objetivos
 
 O C.E.R.A.S. busca experimentar uma linguagem que combine:
 
-* Sintaxe inspirada no latim (por pura diversão minha);
-* Conceitos de programação funcional;
-* Funções como elementos fundamentais da linguagem, introduzindo autorreferencia;
-* Abstração;
-* Tipagem e estruturas de dados;
-* Implementação de um interpretador/compilador próprio;
-* Desenvolvimento de uma linguagem do zero.
+Sintaxe inspirada no latim (por pura diversão minha);
 
-## Conceito
+Conceitos de programação funcional;
+
+Funções como elementos fundamentais da linguagem, introduzindo autorreferência;
+
+Abstração;
+
+Tipagem e estruturas de dados;
+
+Implementação de um interpretador/compilador próprio;
+
+Desenvolvimento de uma linguagem do zero.
+
+Conceito
 
 A proposta do C.E.R.A.S. é utilizar elementos da língua latina para construir uma identidade sintática própria.
 
-```
-
-a linguagem busca experimentar alternativas inspiradas no latim.
+A linguagem busca experimentar alternativas inspiradas no latim.
 
 A ideia não é simplesmente traduzir outra linguagem para latim, mas utilizar a estrutura própria do latim como parte da identidade da linguagem.
-```
 
-> Os exemplos acima representam a direção conceitual da linguagem e podem não corresponder à sintaxe atualmente implementada.
+Os exemplos e conceitos apresentados neste documento representam a direção conceitual da linguagem e podem não corresponder à sintaxe atualmente implementada.
 
-## Arquitetura
+Arquitetura
 
-A arquitetura planejada para a linguagem pode ser representada da seguinte forma:
+A linguagem é projetada em etapas que representam o caminho entre o código-fonte e sua execução:
 
-### Lexer
+Código-fonte
+|
+v
+Lexer
+|
+v
+Tokens
+|
+v
+Parser
+|
+v
+AST
+|
+v
+Interpretador
 
-Responsável por transformar o código-fonte em uma sequência de token
+Lexer
 
-### Parser
+Responsável por transformar o código-fonte em uma sequência de tokens.
 
-Recebe os tokens e constrói uma representação estruturada do codiguim.
+Por exemplo, uma expressão como:
 
-### AST
+soma(2, 3)
 
-A **Abstract Syntax Tree** representa a estrutura lógica do código.
+pode ser transformada em uma sequência conceitual semelhante a:
+
+IDENTIFIER
+LPAREN
+NUMBER
+COMMA
+NUMBER
+RPAREN
+
+Parser
+
+Recebe os tokens produzidos pelo Lexer e constrói uma representação estruturada do programa.
+
+AST
+
+A Abstract Syntax Tree (AST) representa a estrutura lógica do código.
 
 Por exemplo:
 
-```text
-        Call
+```
+    Call
+   /    \
+soma    args
        /    \
-    soma    args
-           /    \
-          2      3
+      2      3
 ```
 
-### Interpretador
+Interpretador
 
-Executa a AST diretamente, permitindo testar a linguagem antes da existência de um compilador nativo.
+Executa a AST diretamente, permitindo testar e desenvolver a linguagem antes da existência de um compilador nativo.
 
-## Programação funcional
+Programação funcional
 
-Um dos principais aspectos experimentais do C.E.R.A.S. é a utilização de conceitos de programação funcional.
-
-Entre eles:
-
-* Funções;
-* Recursão;
-* Composição;
-* Imutabilidade;
-* Expressões;
-* Funções de primeira classe;
-* Abstração.
-
-## Tecnologias
-
-Atualmente, o projeto utiliza principalmente:
-
-* **C**
-* CMake/Make, conforme a organização do projeto
-* GCC/Clang
-* Git
-* Linux
-
-A evolução do projeto também considera **Rust** para componentes futuros da implementação da linguagem.
-
-## Filosofia
-
-A proposta é compreender uma linguagem de programação não apenas como uma ferramenta para executar código, mas como um sistema completo composto por:
-
-```text
-Linguagem
-   +
-Sintaxe
-   +
-Semântica
-   +
-Representação
-   +
-Execução
-```
-
-O projeto serve também como laboratório para estudar:
-
-* Teoria de linguagens de programação;
-* Compiladores;
-* Interpretadores;
-* Estruturas de dados;
-* Algoritmos;
-* Programação funcional;
-* Análise léxica;
-* Parsing;
-* Árvores sintáticas;
-* Sistemas de tipos.
-
-## Status
-
-🚧 **Em desenvolvimento**
-
-O C.E.R.A.S. ainda está em fase experimental. A sintaxe e a arquitetura podem sofrer alterações durante o desenvolvimento.
-
-## Autor
-
-**Daniel Martins**
-
-Projeto experimental de desenvolvimento de uma linguagem de programação própria.
-
----
+Um dos principais aspectos experimentais do C.E.R.A.S. é a utilização
