@@ -1,14 +1,12 @@
 C.E.R.A.S.
 
-C.E.R.A.S. é uma linguagem de programação experimental desenvolvida em C, com inspiração em programação funcional, abstração e uma sintaxe baseada em latim.
+Esta é uma linguagem de programação experimental desenvolvida em C, com inspiração em programação funcional, abstração e uma sintaxe baseada em latim.
 
 O projeto tem como objetivo explorar a criação de uma linguagem própria desde seus fundamentos, incluindo sintaxe, análise léxica, estruturas de dados, interpretação e, futuramente, compilação.
 
 ~Computatio Est Recursio Abstractio Syntaxis.
 
-Objetivos
-
-O C.E.R.A.S. busca experimentar uma linguagem que combine:
+Meu projeto busca no fim experimentar uma linguagem que combine:
 
 Sintaxe inspirada no latim (por pura diversão minha);
 
@@ -16,15 +14,13 @@ Conceitos de programação funcional;
 
 Funções como elementos fundamentais da linguagem, introduzindo autorreferência;
 
-Abstração;
-
 Tipagem e estruturas de dados;
 
 Implementação de um interpretador/compilador próprio;
 
 Desenvolvimento de uma linguagem do zero.
 
-Conceito
+~Conceito~
 
 A proposta do C.E.R.A.S. é utilizar elementos da língua latina para construir uma identidade sintática própria.
 
@@ -40,30 +36,25 @@ A linguagem é projetada em etapas que representam o caminho entre o código-fon
 
 Código-fonte
 |
-v
 Lexer
 |
-v
 Tokens
 |
-v
 Parser
 |
-v
 AST
 |
-v
 Interpretador
 
 Lexer
 
-Responsável por transformar o código-fonte em uma sequência de tokens.
+Responsável pela transform do código-fonte em uma sequência de tokens.
 
 Por exemplo, uma expressão como:
 
 soma(2, 3)
 
-pode ser transformada em uma sequência conceitual semelhante a:
+pode ser transformada em uma sequência semelhante a:
 
 IDENTIFIER
 LPAREN
