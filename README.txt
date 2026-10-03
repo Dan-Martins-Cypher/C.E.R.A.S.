@@ -84,7 +84,3 @@ soma    args
 Interpretador
 
 Executa a AST diretamente, permitindo testar e desenvolver a linguagem antes da existência de um compilador nativo.
-
-Programação funcional
-
-Um dos principais aspectos experimentais do C.E.R.A.S. é a utilização
