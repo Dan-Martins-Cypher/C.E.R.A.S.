@@ -2,7 +2,7 @@ C.E.R.A.S.
 
 Esta é uma linguagem de programação experimental desenvolvida em C, com inspiração em programação funcional, abstração e uma sintaxe baseada em latim.
 
-O projeto tem como objetivo explorar a criação de uma linguagem própria desde seus fundamentos, incluindo sintaxe, análise léxica, estruturas de dados, interpretação e, futuramente, compilação.
+Essa bosta tem o objetivo de explorar a criação de uma linguagem própria desde seus fundamentos, incluindo sintaxe, análise léxica, estruturas de dados, interpretação e, futuramente, compilação.
 
 ~Computatio Est Recursio Abstractio Syntaxis.
 
